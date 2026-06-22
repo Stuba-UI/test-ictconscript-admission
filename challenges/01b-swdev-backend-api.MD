@@ -37,7 +37,7 @@ Build and deploy a publicly reachable REST service that
 
 ## 3  Technical constraints
 
-* **Endpoints** must speak JSON over HTTP.  Accept/Content-Type = `application/json`.  
+* **Endpoints** must speak JSON over HTTP. Accept/Content-Type = `application/json`.  
 * **Validation errors** should respond with HTTP 4xx and an explanatory JSON message.  
 * Provide either  
   * an **OpenAPI / Swagger** document **or**  
