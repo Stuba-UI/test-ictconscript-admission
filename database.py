@@ -34,3 +34,13 @@ def get_entry(entry_id):
     conn.close()
     return row
 
+def add_entry(title, body, iso_time, lat, lon):
+    conn = get_connection()
+    cur = conn.execute(
+        "INSERT INTO entries (title, body, isoTime, lat, lon) VALUES (?, ?, ?, ?, ?)",
+        (title, body, iso_time, lat, lon)
+    )
+    conn.commit()
+    new_id = cur.lastrowid
+    conn.close()
+    return new_id
