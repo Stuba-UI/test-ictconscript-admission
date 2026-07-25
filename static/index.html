@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-    <h1>Unit Logbook — test console</h1>
+    <h1>Unit Logbook â€” test console</h1>
 
     <form id="f">
         <input id="title" placeholder="Title (max 120)">
@@ -68,7 +68,7 @@
         <button>Add entry</button>
     </form>
     <div id="msg"></div>
-    <div id="list">loading…</div>
+    <div id="list">loadingâ€¦</div>
 
     <script>
 async function load() {
@@ -76,7 +76,7 @@ async function load() {
   const entries = await res.json();
   document.getElementById('list').innerHTML = entries.map(e => `
     <div class="entry">
-      <div class="time">#${e.id} · ${e.isoTime}</div>
+      <div class="time">#${e.id} Â· ${e.isoTime}</div>
       <b>${e.title}</b>
       <div>${e.body}</div>
       ${e.lat !== null ? `<div class="coords">?? ${e.lat}, ${e.lon}</div>` : ''}
