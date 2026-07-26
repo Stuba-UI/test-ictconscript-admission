@@ -20,7 +20,8 @@ entries by hand. It's just a testing aid, not part of the API.
 
 ## Stack
 
-- Python 3.12 + Flask
+- Python — developed on 3.14 (Termux default), container runs 3.12-slim
+- Flask
 - SQLite (`sqlite3` from the standard library)
 - gunicorn as the server
 - Docker, deployed on Render
